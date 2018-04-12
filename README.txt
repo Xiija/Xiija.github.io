@@ -5,4 +5,4 @@ A Pen created at CodePen.io. You can find this one at https://codepen.io/Xiija/p
  
  others at
  
- https://xiija.github.io/MAIN-01/page01/index.html
+ https://xiija.github.io/MAIN/page01/index.html
