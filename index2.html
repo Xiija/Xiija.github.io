@@ -1,0 +1,110 @@
+<!-- DOCTYPE html -->
+<!--#===========================*/	
+   -# Author: Xiija (2018)
+   -# Desc: Template
+   -# Notes:
+   -# 
+   -# 
+   -# 
+   -# 
+----#============================*/-->
+<html>
+<title>CODEPEN Template</title>
+  <header>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  </header>
+<meta charset="UTF-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js">
+  </script>
+  <!-- CSS -->
+  
+  <style>
+        nav {
+      background: transparent;
+      height: 75px;
+      transition: all .4s ease-in-out;
+    }
+    .navbar-brand {
+      color: black;
+      font-weight: bold;
+      margin-top: 15px;
+      font-size: 24px;
+      transition: all .4s ease-in-out;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      flex-wrap: wrap;
+      float: right;
+    }
+    li {
+      margin-top: 25px;
+    }
+    ul li a {
+      text-decoration: none;
+      color: black;
+      padding: 8px 15px;
+      font-size: 18px;
+      transition: all .4s ease-in-out;
+    }
+    ul li a:hover {
+      text-decoration: none;
+      transition: all .4s ease-in-out;
+    }
+    .banner {
+      background-size: cover;
+      background-image: url(https://wallpaperscraft.com/image/girl_mountains_backpack_114178_5458x3705.jpg);
+      height: 100vh;
+    }
+    .text {
+      max-width: 960px;
+      margin: 80px auto;
+    }
+    nav.black {
+      background: black;
+      opacity: 0.7;
+      height: 75px;
+      transition: all .4s ease-in-out;
+    }
+    nav.black a {
+      color: white;
+      transition: all .4s ease-in-out;
+    }
+  </style>
+  <body>
+        <div class="banner">
+      <nav class="fixed-top">
+          <a class="navbar-brand" href="#">My Homepage</a>
+          <ul>
+            <li><a href="#">Home</a>
+            <li><a href="#">Contact</a>
+            <li><a href="#">About</a>
+            <li><a href="#">Portfolio</a>
+          </ul>
+      </nav>
+    </div>
+    <section class="text">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+    </section>
+    
+     <!-- SCRIPTS ( not working? ) --> 
+    
+    <script>
+       $(window).on('scroll', function() {
+        if($(window).scrollTop()) {
+          $('nav').addClass('black');
+        }
+        else {
+          $('nav').removeClass('black');
+        }
+      })
+    </script>
+  </body>
+  </html>
