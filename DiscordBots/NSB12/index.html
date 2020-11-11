@@ -6,11 +6,15 @@ make responsive? etc
 <head>
 <style>
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-.header{
+.header{ 
+  display: flex;
+  align-items: center;
   background: black;
   color:   orange;
-  padding: 10px;
-  margin:  10px;
+  width: 55%;
+  padding: 5px;
+  margin: 0 auto;
+  margin-bottom: 15px; 
 }
 .grid {
   display: grid;
@@ -56,12 +60,23 @@ body {
   line-height: 1.3;
   font-family: Roboto, sans-serif;
 }
+img {
+    display: inline;
+    max-width:80px;
+    max-height:80px;
+    width: auto;
+    height: auto;
+}
   </style>
 </head>
 <body>
+
 <div class="header">
-  The header
+  <img src="https://res.cloudinary.com/xiija/image/upload/v1605108353/freebot-01.png"
+       alt="img here">
+  <h2>NodeStarterBot12</h2> 
 </div>
+  
 <div class="grid">
   
   <div class="pro-features">
