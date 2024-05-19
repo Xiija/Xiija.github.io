@@ -20,7 +20,10 @@ body{
   grid-template-columns: 30% auto;
   gap: 10px;  
 }
-#panel{
-  background: #333;
-   border: 2px solid lime;
+#panel{ 
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ4C5ydtFef7eZAxkLzY9g4mIjDAR1RCxsXffbKy7TO4qbgJ4ozAAPT_bQwy4MjpGV5oQ&usqp=CAU");
+  border: 2px solid lime;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
