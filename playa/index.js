@@ -39,6 +39,7 @@ async function refresh() {
        let slurl = info.table.rows[0].c[0].v;     
        let tmp = slurl.replace("{people=","");
        tmp = tmp.replace("}","");
+       tmp = tmp.replaceAll(",", "<br>");
        // let slurl2 = JSON.parse(tmp);
        dynamicPart2.innerHTML = "ON PLAYA: <br><br>"  + tmp;  
       let currtime = time();
