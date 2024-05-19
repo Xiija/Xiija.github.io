@@ -15,6 +15,36 @@ let time = function() {
       }); 
       return tstamp;   
 };
+// ---------------------------------------------------------------------------
+let url3 = "https://api.ipify.org?format=json";
+async function load() {
+  fetch(url3)
+  .then(res  => res.json())
+  .then(jdata => {
+    // document.getElementById("ip").innerHTML = jdata.ip; 
+     let url2 = "https://ipapi.co/"+jdata.ip+"/json/";  
+     async function getdata() {
+        fetch(url2)
+       .then(res  => res.json())
+       .then(jdata2 => {
+          let lat  = jdata2.latitude;
+          let long = jdata2.longitude;
+          let target = jdata2.city + ", " + jdata2.region + ", " + jdata2.country_name;
+          // document.getElementById("lat").innerHTML +=  lat;
+          // document.getElementById("long").innerHTML += long;   
+          document.getElementById("e1").innerHTML += target; 
+
+       })
+       .catch(err => {   
+       });   
+     };
+     getdata();
+  }) 
+  .catch(err => {   
+  }); // end fetch  
+}; // end refresh
+load();
+// --------------------------------------------------------------------------------
 // -----------------
 //fetch url from google and http req it.
 async function refresh() {
