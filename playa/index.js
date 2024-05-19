@@ -1,17 +1,10 @@
 // pull url from a google spreadsheet
 // the spreadsheet info is non private so i don't mind showing the ID .
-// the repl all of a sudden stopped working ....?
-
-
+// all of a sudden stopped working ....?
 // ==========================================================
-
   let tm           = document.getElementById("s1");
   let dynamicPart2 = document.getElementById("dynamicPart2");  
   let url = "https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/gviz/tq?tqx=out:json&sheet=Data&gid=0&range=B2";
-
-
-// https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/edit#gid=0
-// https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/edit?usp=sharing
 // ----------------
 let time = function() {   
      let tstamp = new Date()
@@ -22,9 +15,7 @@ let time = function() {
       return tstamp;   
 };
 // -----------------
-
 //fetch url from google and http req it.
-
 async function refresh() {
   
   fetch(url)
@@ -50,9 +41,7 @@ async function refresh() {
   });
   setTimeout(refresh,10000);  // disabled for testing
 };
-
- refresh();
-
+refresh();
 // ==================================
 
 
