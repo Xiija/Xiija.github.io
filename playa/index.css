@@ -17,7 +17,7 @@ body{
 }
 #main{
   display: grid;
-  grid-template-columns: 30% auto;
+  grid-template-columns: 30% 60% auto;
   gap: 10px;  
 }
 #panel{ 
