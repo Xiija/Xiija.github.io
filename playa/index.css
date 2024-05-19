@@ -1,0 +1,12 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background: #333;
+  color: khaki;
+}
+#staticPart{
+  color: lime;
+  text-align: center;
+}
