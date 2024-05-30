@@ -7,7 +7,7 @@ body{
   color: khaki;
 }
 #staticPart{
-  color: lime;
+  color: #95c770;
   text-align: center;
   font-size: 30px;
   font-weight:900;
@@ -30,6 +30,9 @@ body{
 #url{
   color: goldenrod;
 }
-#e1{
+#e1, #s1{
   color: pink;
+}
+#s1 {
+  font-weight: bold;
 }
