@@ -4,7 +4,9 @@
 // ==========================================================
  
   let dynamicPart2 = document.getElementById("dynamicPart2");  
-  let url          = "https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/gviz/tq?tqx=out:json&sheet=Data&gid=0&range=B2";
+  let url          = "https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/gviz/tq?tqx=out:json&";
+  let region       = "sheet=";
+  let tail         = "&gid=0&range=B2";
  // see sheet at:     https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/edit#gid=0
 // ----------------
 
@@ -14,8 +16,9 @@
 // -----------------
 //fetch url from google and http req it.
 async function refresh() {
-  
-  fetch(url)
+  region += "Data"; //"Burning Man- Deep Hole";
+  let gsheet = url + region + tail;
+  fetch(gsheet)
   .then(res  => res.text())
   .then(data => {
      data = data.substr(47).slice(0,-2);   
