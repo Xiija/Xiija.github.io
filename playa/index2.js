@@ -2,7 +2,7 @@
 // the spreadsheet info is non private so i don't mind showing the ID .
 // all of a sudden stopped working ....?
 // ==========================================================
-  let tm           = document.getElementById("s1");
+ 
   let dynamicPart2 = document.getElementById("dynamicPart2");  
   let url          = "https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/gviz/tq?tqx=out:json&sheet=Data&gid=0&range=B2";
  // see sheet at:     https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/edit#gid=0
@@ -29,8 +29,7 @@ async function refresh() {
        tmp = tmp.replace("}","");
        tmp = tmp.replaceAll("," , "<br>");      
        dynamicPart2.innerHTML = "ON PLAYA: <br><br>"  + tmp;  
-       let currtime = time();
-       tm.innerHTML = currtime;
+     
   })
   .then(info2 => {   
   })
