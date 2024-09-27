@@ -1,4 +1,4 @@
-// pull url from a google spreadsheet
+Hole// pull url from a google spreadsheet
 // the spreadsheet info is non private so i don't mind showing the ID .
 // all of a sudden stopped working ....?
 // ==========================================================
@@ -31,7 +31,7 @@ async function refresh() {
        let tmp = slurl.replace("{people=","");
        tmp = tmp.replace("}","");
        tmp = tmp.replaceAll("," , "<br>");      
-       dynamicPart2.innerHTML = "ON PLAYA: <br><br>"  + tmp;  
+       dynamicPart2.innerHTML = "ON DeepHole: <br><br>"  + tmp;  
      
   })
   .then(info2 => {   
