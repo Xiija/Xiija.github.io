@@ -30,7 +30,7 @@ async function refresh() {
            let tmp = slurl.replace("{people=","");
            tmp = tmp.replace("}","");
            tmp = tmp.replaceAll("," , "<br>");   
-          document.getElementById("0").innerText = tmp;     
+          document.getElementById("0").innerHTML = tmp;     
       })     
       .catch(err => {   
       });
