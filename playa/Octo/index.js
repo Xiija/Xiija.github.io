@@ -38,6 +38,16 @@ async function refresh() {
 };
 refresh();
 // ==================================
-
+function tm(){
+   let tstamp = new Date()
+  .toLocaleString( 'en-US', {
+     timeZone: 'America/Los_Angeles',
+     hour12: true
+  }); 
+  document.getElementById("e1").innerText = tstamp;
+   setTimeout(tm,1000);
+}
+tm();
+ 
 
  
