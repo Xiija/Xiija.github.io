@@ -40,3 +40,9 @@ body{
 h4 {
   color: lime;
 }
+h4:nth-child( even ) {
+  background: #555;
+}
+h4:nth-child( odd ) {
+  background: #222;
+}
