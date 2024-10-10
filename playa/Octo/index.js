@@ -31,6 +31,17 @@ async function refresh() {
            tmp = tmp.replace("}","");
            tmp = tmp.replaceAll("," , "<br>");   
           document.getElementById("0").innerHTML = tmp;     
+
+           let text = "No avatars in the region!"; 
+           document.designMode = "on";
+           var sel = window.getSelection();
+           sel.collapse(document.body, 0);
+           
+           while (window.find(text)) {
+             document.execCommand("foreColor", false, "cyan");    
+             sel.collapseToEnd();
+           }
+           document.designMode = "off";
       })     
       .catch(err => {   
       });
