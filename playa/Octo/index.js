@@ -38,7 +38,7 @@ async function refresh() {
            sel.collapse(document.body, 0);
            
            while (window.find(text)) {
-             document.execCommand("foreColor", false, "cyan");    
+             document.execCommand("foreColor", false, "#d6d6c2");    
              sel.collapseToEnd();
            }
            document.designMode = "off";
