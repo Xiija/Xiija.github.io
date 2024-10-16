@@ -9,7 +9,9 @@
   let tail         = "sheet=Regions&range=B13";
  // see sheet at:     https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/edit#gid=0
 // ----------------
-  
+window.addEventListener('load', function() {
+  window.scrollTo(0, 0);
+});  
 window.addEventListener('scroll', function() { 
   localStorage.setItem('scrollPosition', window.scrollY);
 });
