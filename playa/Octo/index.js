@@ -10,7 +10,9 @@
  // see sheet at:     https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/edit#gid=0
 // ----------------
   
-
+window.addEventListener('scroll', function() { 
+  localStorage.setItem('scrollPosition', window.scrollY);
+});
 
 //fetch url from google and http req it.
 async function refresh() {  
@@ -42,7 +44,9 @@ async function refresh() {
              sel.collapseToEnd();
            }
            document.designMode = "off";
-           window.scrollTo(0, 0);
+           if (localStorage.getItem('scrollPosition')) {
+            window.scrollTo(0, localStorage.getItem('scrollPosition'));          
+          }
       })     
       .catch(err => {   
       });
