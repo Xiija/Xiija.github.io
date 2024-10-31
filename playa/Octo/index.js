@@ -60,7 +60,7 @@ async function refresh() {
       });
   setTimeout(refresh,10000); 
 };
-refresh();
+// refresh();
 // ==================================
 function tm(){
    let tstamp = new Date()
