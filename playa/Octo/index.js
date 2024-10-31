@@ -60,7 +60,7 @@ async function refresh() {
       });
   setTimeout(refresh,10000); 
 };
-// refresh();
+// refresh();  // UN COMMENT TO USE ------------------------------------------------
 // ==================================
 function tm(){
    let tstamp = new Date()
@@ -71,7 +71,7 @@ function tm(){
   document.getElementById("e1").innerText = tstamp;
    setTimeout(tm,1000);
 }
-tm();
+// tm(); // UN COMMENT TO USE ------------------------------------------------
  
 
  
