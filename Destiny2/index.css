@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background: #333;
+  color: khaki;
+}
+#staticPart{
+  color: #95c770;
+  text-align: center;
+  font-size: 30px;
+  font-weight:900;
+}
+#url{
+  color: goldenrod;
+}
