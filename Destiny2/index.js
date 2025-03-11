@@ -6,7 +6,7 @@ async function refresh() {
     .then(data => {
         let c = data.Response.systems.Destiny2;
         let msg = c.enabled ? "The game is UP!" : "The game is Down!";       
-        dyn.innerText = msg;
+        dyn.innerText = "STATUS: " + msg;
     })  
     .catch(err => {   
     });
