@@ -12,12 +12,16 @@ body{
   font-size: 30px;
   font-weight:900;
 }
+#dynamicPart{
+  color: orange;
+  text-align: center;
+  font-size: 30px;
+  font-weight:900;
+}
 #status{
   color: lime;
   text-align: center;
   font-size: 30px;
   font-weight:900;
 }
-#url{
-  color: goldenrod;
-}
+
