@@ -11,8 +11,9 @@ async function refresh() {
         dyn.innerText = "STATUS: " + msg;
           
         if( !c.enabled && tog === 0 ) {
-                const data = { 
-                  status: 'down'
+                let data = { 
+                  username: "Git d2 status",
+                  content: "Status: DOWN"
                 };
                 
                 fetch(disc, {
@@ -28,8 +29,9 @@ async function refresh() {
                 tog = 1;
         }
         if( c.enabled && tog === 1 ) {
-                const data = { 
-                  status: 'up'
+                let data2 = { 
+                  username: "Git d2 status",
+                  content: "Status: UP"
                 };
                 
                 fetch(disc, {
@@ -37,7 +39,7 @@ async function refresh() {
                   headers: {
                     'Content-Type': 'application/json' 
                   },
-                  body: JSON.stringify(data); 
+                  body: JSON.stringify(data2); 
                 })
                 .catch(error => {
                   console.error('Error:', error); 
