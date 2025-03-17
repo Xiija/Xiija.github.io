@@ -70,7 +70,7 @@ async function refresh() {
   })
   .catch(err => {   
   });
-  setTimeout(refresh,1000);  // disabled for testing
+  setTimeout(refresh,30000);  // disabled for testing
 };
 refresh();
 // ==================================
