@@ -60,7 +60,9 @@ async function refresh() {
       });
   setTimeout(refresh,10000); 
 };
-// refresh();  // UN COMMENT TO USE ------------------------------------------------
+ // UN COMMENT TO USE ------------------------------------------------
+refresh();  // IN USE
+ // UN COMMENT TO USE ------------------------------------------------
 // ==================================
 function tm(){
    let tstamp = new Date()
