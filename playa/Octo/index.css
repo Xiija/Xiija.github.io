@@ -54,3 +54,21 @@ em{
 u{
   color: #C0FCFA;
 }
+a:link {
+  color: cyan; /* Or any valid color value */
+}
+
+/* Visited link */
+a:visited {
+  color: #C0FCFA;
+}
+
+/* Mouse over link */
+a:hover {
+  color: pink;
+}
+
+/* Selected link (when clicked) */
+a:active {
+  color: hotpink;
+}
