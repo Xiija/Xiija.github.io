@@ -18,6 +18,7 @@ body{
 #main{
     column-count: 2; 
    column-gap: 20px;
+  
 /*  display: grid;
   grid-template-columns: 30% 60% auto;
   gap: 10px;  
