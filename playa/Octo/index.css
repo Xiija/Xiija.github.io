@@ -11,6 +11,13 @@ body{
   text-align: center;
   font-size: 30px;
   font-weight:900;
+  background: #727261;
+  height: 100px;
+  text-shadow:
+    1px 0 0 black,    /* Right shadow */
+    -1px 0 0 black,   /* Left shadow */
+    0 1px 0 black,    /* Bottom shadow */
+    0 -1px 0 black;   /* Top shadow */
 }
 #t1{
   color: goldenrod;
