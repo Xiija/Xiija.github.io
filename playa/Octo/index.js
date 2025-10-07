@@ -6,7 +6,7 @@
   let url3         = "https://docs.google.com/spreadsheets/d/1CktAnxWmQySR0WkbxyVF1k_JpXwCZwFDAqsWvzK1xng/gviz/tq?tqx=out:json&"; // 2025 octo regions
   let url2         = "https://docs.google.com/spreadsheets/d/1Q6lT1r9Dq55z3H_DQS32-Th1Ws8Lf6NhibvfEzf4fs8/gviz/tq?tqx=out:json&";
   let url          = "https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/gviz/tq?tqx=out:json&"; 
-  let tail         = "sheet=Regions&range=B13";
+  let tail         = "sheet=TEST&range=A1";   // "sheet=Regions&range=B13";
  // see sheet at:     https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/edit#gid=0
 // ----------------
 window.addEventListener('beforeunload', function(event) {
@@ -24,7 +24,7 @@ window.addEventListener('scroll', function() {
 
 //fetch url from google and http req it.
 async function refresh() {  
-      region =  "sheet=Regions";
+    //  region =  "sheet=Regions";
       let gsheet = url3  + tail;
       await fetch(gsheet)
       .then(res  => res.text())
