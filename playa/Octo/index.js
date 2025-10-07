@@ -40,7 +40,7 @@ async function refresh() {
            let tmp = slurl.replace("{people=","");
            tmp = tmp.replace("}","");
            tmp = tmp.replaceAll("," , "<br>");   
-          document.getElementById("0").innerHTML = tmp;     
+          document.getElementById("main").innerHTML = tmp;     
 
            let text = "No avatars in the region!"; 
            document.designMode = "on";
