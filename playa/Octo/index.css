@@ -36,7 +36,7 @@ body{
   gap: 10px; 
 }
 
-
+/*
 .main div:nth-child(5) {
   grid-column-start: 2; 
 }   
@@ -44,6 +44,7 @@ body{
 .main div:nth-child(9) {
   grid-column-start: 3; 
 }  
+*/
 #panel{ 
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ4C5ydtFef7eZAxkLzY9g4mIjDAR1RCxsXffbKy7TO4qbgJ4ozAAPT_bQwy4MjpGV5oQ");
   border: 1px solid orange;
