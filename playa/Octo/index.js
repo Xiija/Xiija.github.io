@@ -58,7 +58,7 @@ async function refresh() {
       })     
       .catch(err => {   
       });
-  setTimeout(refresh,10000); 
+  setTimeout(refresh,60000); 
 };
  // UN COMMENT TO USE ------------------------------------------------
 refresh();  // IN USE
