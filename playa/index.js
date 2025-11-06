@@ -6,6 +6,7 @@
   let dynamicPart2 = document.getElementById("dynamicPart2");  
   let url          = "https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/gviz/tq?tqx=out:json&sheet=Data&gid=0&range=B2";
  // see sheet at:     https://docs.google.com/spreadsheets/d/1yoALf1_MGmwyohAwnuFtg3zyjSKxyxwlPwM6VtsQ78E/edit#gid=0
+// 2024-static01
 // ----------------
 let time = function() {   
      let tstamp = new Date()
