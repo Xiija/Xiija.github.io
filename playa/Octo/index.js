@@ -2,8 +2,8 @@
 // the spreadsheet info is non private so i don't mind showing the ID .
 //
 // ==========================================================
- 
-  let url         = "https://docs.google.com/spreadsheets/d/1CktAnxWmQySR0WkbxyVF1k_JpXwCZwFDAqsWvzK1xng/gviz/tq?tqx=out:json&"; // 2025 octo regions 
+ // https://docs.google.com/spreadsheets/d/1ZAQBA-5DYboW2OEwCC8hX2LEO1J4P7-8BXeH-c-05KU/edit?gid=0#gid=0
+  let url         = "https://docs.google.com/spreadsheets/d/1ZAQBA-5DYboW2OEwCC8hX2LEO1J4P7-8BXeH-c-05KU/gviz/tq?tqx=out:json&"; // 2026 octo regions 
   let tail         = "sheet=Regions&range=B13"; // "sheet=TEST&range=A1";   // 
  // see sheet at:    https://docs.google.com/spreadsheets/d/1ZAQBA-5DYboW2OEwCC8hX2LEO1J4P7-8BXeH-c-05KU/edit?gid=0#gid=0
 // ----------------
