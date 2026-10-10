@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    (function() {
+  
+  const style = document.createElement('style');
+  style.textContent = `
+  #my-widget-card {
+    width: 250px;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: sans-serif;
+    background: darkkhaki;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  #my-widget-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    background: #555;
+    color: orange;
+  }
+`;
+  document.head.appendChild(style);
+  const container = document.createElement('div');
+  container.id = 'my-widget-card';
+  container.innerHTML = `
+    <h3>Hello Widget</h3>
+    <p>This is a small custom widget.</p>
+    <button id="widget-btn">Click Me</button>
+  `;
+  document.body.appendChild(container);
+  document.getElementById('widget-btn').addEventListener('click', function() {
+    alert('Widget button clicked!');
+  });
+})();
+  </script>
+</html>
