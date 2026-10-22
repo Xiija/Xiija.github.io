@@ -16,10 +16,10 @@ body {
 }
 .dashboard {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   width: 90%;
-  max-width: 1000px;
+  max-width: 900px;
 }
 .clock-card {
   background: var(--card);
