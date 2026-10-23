@@ -1,8 +1,8 @@
 const cities = [
   { name: 'San Francisco', tz: 'America/Los_Angeles' },
   { name: 'London', tz: 'Europe/London' },
-  { name: 'Sydney', tz: 'Australia/Sydney' },
-  { name: 'Tokyo', tz: 'Asia/Tokyo' }
+  { name: 'Tokyo',  tz: 'Asia/Tokyo' },
+  { name: 'Sydney', tz: 'Australia/Sydney' }
   ];
 function createClocks() {
   const dash = document.getElementById('dash');
